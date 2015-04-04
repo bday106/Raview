@@ -1,0 +1,1 @@
+angular.module('raview',['angular-meteor', 'ui.router']);
