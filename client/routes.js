@@ -22,12 +22,12 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       .state('reviews', {
         url: '/reviews',
         templateUrl: 'client/reviews/views/reviews-list.ng.html',
-        controller: 'PartiesListCtrl'
+        controller: 'ReviewsListCtrl'
       })
-      .state('partyDetails', {
+      .state('reviewDetails', {
         url: '/reviews/:partyId',
-        templateUrl: 'client/reviews/views/party-details.ng.html',
-        controller: 'PartyDetailsCtrl',
+        templateUrl: 'client/reviews/views/review-details.ng.html',
+        controller: 'ReviewDetailsCtrl',
         resolve: {
           "currentUser": ["$meteor", function($meteor){
             return $meteor.requireUser();
