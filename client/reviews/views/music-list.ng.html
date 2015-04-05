@@ -22,7 +22,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="row carousel-holder">
+			<!-- <div class="row carousel-holder">
 				<div class="col-md-12">
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
@@ -50,133 +50,151 @@
 					</div>
 				</div>
 
-			</div>
+			</div> -->
 
 			<div class="row">
-				<form>
-				  <label>Title</label>
-				  <input ng-model="newReview.name">
-				  <label>Description</label>
-				  <input ng-model="newReview.description">
-				  <button ng-click="newReview.owner=$root.currentUser._id;reviews.push(newReview)">Add</button>
+			<h3 style="text-align: center">Anything Awesome You Want to See Reviewed? Add It Below!</h3>
+			<br></br>
+				<form style="text-align: center">
+				  <label>Title: </label>
+				  <input ng-model="newMusicItem.name">
+				  <label>Description: </label>
+				  <input ng-model="newMusicItem.description">
+				  <label>Picture URL: </label>
+				  <input ng-model="newMusicItem.pic">
+				  <label>Artist: </label>
+				  <input ng-model="newMusicItem.artist">
+				  <button ng-click="music-items.push(newMusicItem)">Add</button>
 				</form>
-				<ul>
-				  <li ng-repeat="review in reviews">
-					<a href="/reviews/{{review._id}}">{{review.name}}</a>
-					<p>{{review.description}}</p>
-					<button ng-click="remove(review)">X</button>
-				  </li>
-				</ul>
+				<br></br>
 
+				  <!-- <div class="col-sm-4 col-lg-4 col-md-4" ng-repeat="item in items">
+				<a href="/music-item/{{item.id}}">
+				  	<img src="{{item.pic}}">
+					<h4>{{item.name}}</h4>
+					<p>{{item.description}}</p>
+				  </a>
+				  </div> -->
+
+				<a href="/music/jackjohnson09m821v3">
 				<div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="http://placehold.it/320x150" alt="">
+						<img src="img/music/jackjohnson_concert.png" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$24.99</h4>
-							<h4><a href="#">First Product</a>
+							<h4 class="pull-right">$54.99</h4>
+							<h4>Jack Johnson Live
 							</h4>
-							<p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+							<p>Jack comes alive at the Greek!</p>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">15 reviews</p>
-							<p>
+							<!-- <p>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
+				</a>
 
+				<a href="/music/greenday09812c7">
 				<div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="http://placehold.it/320x150" alt="">
+						<img src="img/music/greenday_album.jpg" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$64.99</h4>
-							<h4><a href="#">Second Product</a>
+							<h4 class="pull-right">$12.99</h4>
+							<h4>American Idiot
 							</h4>
-							<p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<p>Own one of Green Day's most popular albums</p>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">12 reviews</p>
-							<p>
+							<!-- <p>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star-empty"></span>
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
+				</a>
 
-				<div class="col-sm-4 col-lg-4 col-md-4">
+				
+				<a href="/music/qotsa07weu3"><div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="http://placehold.it/320x150" alt="">
+						<img src="img/music/qotsa_concert.jpg" alt="">
 						<div class="caption">
 							<h4 class="pull-right">$74.99</h4>
-							<h4><a href="#">Third Product</a>
+							<h4>Queens Of The Stone Age Festival
 							</h4>
-							<p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<p>Catch QOTSA on their summer tour!</p>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">31 reviews</p>
-							<p>
+							<!-- <p>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star-empty"></span>
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
+				</a>
 
-				<div class="col-sm-4 col-lg-4 col-md-4">
+				
+				<a href="/music/foofighters23weljk0"><div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="http://placehold.it/320x150" alt="">
+						<img src="img/music/foofighters_concert.jpg" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$84.99</h4>
-							<h4><a href="#">Fourth Product</a>
+							<h4 class="pull-right">$32.99</h4>
+							<h4>Here Come the Foo Fighters
 							</h4>
-							<p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<p>Look out for them in town</p>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">6 reviews</p>
-							<p>
+							<!-- <p>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star-empty"></span>
 								<span class="glyphicon glyphicon-star-empty"></span>
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
+				</a>
 
-				<div class="col-sm-4 col-lg-4 col-md-4">
+				
+				<a href="/music/blink1821vjas34"><div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="http://placehold.it/320x150" alt="">
+						<img src="img/music/blink182_album.jpg" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$94.99</h4>
-							<h4><a href="#">Fifth Product</a>
+							<h4 class="pull-right">$10.99</h4>
+							<h4>Blink-182
 							</h4>
-							<p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<p>Their debut album</p>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">18 reviews</p>
-							<p>
+							<!-- <p>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star-empty"></span>
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
+				</a>
 			</div>
 		</div>
 	</div>

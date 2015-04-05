@@ -23,7 +23,7 @@
     right: 0;
     text-align:center;
     padding-top:calc(50% - 30px);
-    background-image:url('home-resources/gaming.jpg');
+    background-image:url('img/home-resources/gaming.jpg');
     background-size: 450px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -37,7 +37,7 @@
     right: 0;
     text-align:center;
     padding-top:calc(50% - 30px);
-    background-image:url('home-resources/music.jpg');
+    background-image:url('img/home-resources/music.jpg');
     background-size: 450px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -51,7 +51,7 @@
     right: 0;
     text-align:center;
     padding-top:calc(50% - 30px);
-    background-image: url('home-resources/furniture.jpg');
+    background-image: url('img/home-resources/furniture.jpg');
     background-size: 450px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -65,7 +65,7 @@
     right: 0;
     text-align:center;
     padding-top:calc(50% - 30px);
-    background-image: url('home-resources/office.jpg');
+    background-image: url('img/home-resources/office.jpg');
     background-size: 450px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -79,7 +79,7 @@
     right: 0;
     text-align:center;
     padding-top:calc(50% - 30px);
-    background-image: url('home-resources/food.jpg');
+    background-image: url('img/home-resources/food.jpg');
     background-size: 450px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -93,7 +93,7 @@
     right: 0;
     text-align:center;
     padding-top:calc(50% - 30px);
-    background-image: url('home-resources/vacation.jpg');
+    background-image: url('img/home-resources/vacation.jpg');
     background-size: 450px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -107,7 +107,7 @@
     right: 0;
     text-align:center;
     padding-top:calc(50% - 30px);
-    background-image: url('home-resources/nightlife.jpg');
+    background-image: url('img/home-resources/nightlife.jpg');
     background-size: 450px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -121,7 +121,7 @@
     right: 0;
     text-align:center;
     padding-top:calc(50% - 30px);
-    background-image: url('home-resources/android.jpg');
+    background-image: url('img/home-resources/android.jpg');
     background-size: 450px;
     color: white;
     text-shadow: 2px 2px 4px #000000;

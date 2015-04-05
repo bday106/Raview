@@ -19,6 +19,11 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
         templateUrl: 'client/reviews/views/home.ng.html',
         controller: 'HomeCtrl'
       })
+      .state('itemDetails', {
+        url: '/item/:itemId',
+        templateUrl: 'client/reviews/views/item-details.ng.html',
+        controller: 'ReviewDetailsCtrl'
+      })
       .state('music', {
         url: '/music',
         templateUrl: 'client/reviews/views/music-list.ng.html',
@@ -27,12 +32,12 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       .state('musicDetails', {
         url: '/music/:itemId',
         templateUrl: 'client/reviews/views/music-details.ng.html',
-        controller: 'ReviewDetailsCtrl',
-        resolve: {
-          "currentUser": ["$meteor", function($meteor){
-            return $meteor.requireUser();
-          }]
-        }
+        controller: 'ReviewDetailsCtrl'
+      })
+      .state('jackjohnson', {
+        url: '/music/jackjohnson09m821v3',
+        templateUrl: 'client/reviews/views/jack-details.ng.html',
+        controller: 'ReviewDetailsCtrl'
       })
       .state('nightlife', {
         url: '/nightlife',
@@ -42,12 +47,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       .state('nightlifeDetails', {
         url: '/nightlife/:itemId',
         templateUrl: 'client/reviews/views/review-details.ng.html',
-        controller: 'ReviewDetailsCtrl',
-        resolve: {
-          "currentUser": ["$meteor", function($meteor){
-            return $meteor.requireUser();
-          }]
-        }
+        controller: 'ReviewDetailsCtrl'
       })
       .state('food', {
         url: '/food',
@@ -57,12 +57,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       .state('foodDetails', {
         url: '/food/:itemId',
         templateUrl: 'client/reviews/views/review-details.ng.html',
-        controller: 'ReviewDetailsCtrl',
-        resolve: {
-          "currentUser": ["$meteor", function($meteor){
-            return $meteor.requireUser();
-          }]
-        }
+        controller: 'ReviewDetailsCtrl'
       })
       .state('furniture', {
         url: '/furniture',
@@ -72,12 +67,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       .state('furnitureDetails', {
         url: '/furniture/:itemId',
         templateUrl: 'client/reviews/views/review-details.ng.html',
-        controller: 'ReviewDetailsCtrl',
-        resolve: {
-          "currentUser": ["$meteor", function($meteor){
-            return $meteor.requireUser();
-          }]
-        }
+        controller: 'ReviewDetailsCtrl'
       })
       .state('office', {
         url: '/office',
@@ -87,12 +77,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       .state('officeDetails', {
         url: '/office/:itemId',
         templateUrl: 'client/reviews/views/review-details.ng.html',
-        controller: 'ReviewDetailsCtrl',
-        resolve: {
-          "currentUser": ["$meteor", function($meteor){
-            return $meteor.requireUser();
-          }]
-        }
+        controller: 'ReviewDetailsCtrl'
       })
       .state('gaming', {
         url: '/gaming',
@@ -102,12 +87,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       .state('gamingDetails', {
         url: '/gaming/:itemId',
         templateUrl: 'client/reviews/views/review-details.ng.html',
-        controller: 'ReviewDetailsCtrl',
-        resolve: {
-          "currentUser": ["$meteor", function($meteor){
-            return $meteor.requireUser();
-          }]
-        }
+        controller: 'ReviewDetailsCtrl'
       })
       .state('android', {
         url: '/android',
@@ -117,12 +97,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       .state('androidDetails', {
         url: '/android/:itemId',
         templateUrl: 'client/reviews/views/review-details.ng.html',
-        controller: 'ReviewDetailsCtrl',
-        resolve: {
-          "currentUser": ["$meteor", function($meteor){
-            return $meteor.requireUser();
-          }]
-        }
+        controller: 'ReviewDetailsCtrl'
       })
       .state('vacation', {
         url: '/vacation',
@@ -132,12 +107,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       .state('vacationDetails', {
         url: '/vacation/:itemId',
         templateUrl: 'client/reviews/views/review-details.ng.html',
-        controller: 'ReviewDetailsCtrl',
-        resolve: {
-          "currentUser": ["$meteor", function($meteor){
-            return $meteor.requireUser();
-          }]
-        }
+        controller: 'ReviewDetailsCtrl'
       });
 
     $urlRouterProvider.otherwise("/home");
