@@ -14,13 +14,18 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
     $locationProvider.html5Mode(true);
 
     $stateProvider
+      .state('home', {
+        url: '/home',
+        templateUrl: 'client/reviews/views/home.ng.html',
+        controller: 'HomeCtrl'
+      })
       .state('reviews', {
         url: '/reviews',
         templateUrl: 'client/reviews/views/reviews-list.ng.html',
         controller: 'ReviewsListCtrl'
       })
       .state('reviewDetails', {
-        url: '/reviews/:partyId',
+        url: '/reviews/:reviewId',
         templateUrl: 'client/reviews/views/review-details.ng.html',
         controller: 'ReviewDetailsCtrl',
         resolve: {
