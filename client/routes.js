@@ -51,7 +51,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       })
       .state('food', {
         url: '/food',
-        templateUrl: 'client/reviews/views/reviews-list.ng.html',
+        templateUrl: 'client/reviews/views/food-list.ng.html',
         controller: 'ReviewsListCtrl'
       })
       .state('foodDetails', {
@@ -61,7 +61,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       })
       .state('furniture', {
         url: '/furniture',
-        templateUrl: 'client/reviews/views/reviews-list.ng.html',
+        templateUrl: 'client/reviews/views/furniture-list.ng.html',
         controller: 'ReviewsListCtrl'
       })
       .state('furnitureDetails', {
