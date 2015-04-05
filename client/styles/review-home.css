@@ -10,3 +10,120 @@
     text-align:center;
     padding-top:calc(50% - 30px);
 }
+.title {
+	text-align: center;
+    color: black;
+    font-size: 48px;
+}
+.gaming {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 30px);
+    background-image:url('home-resources/gaming.jpg');
+    background-size: 450px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
+.music {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 30px);
+    background-image:url('home-resources/music.jpg');
+    background-size: 450px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
+.furniture {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 30px);
+    background-image: url('home-resources/furniture.jpg');
+    background-size: 450px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
+.office {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 30px);
+    background-image: url('home-resources/office.jpg');
+    background-size: 450px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
+.food {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 30px);
+    background-image: url('home-resources/food.jpg');
+    background-size: 450px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
+.vacation {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 30px);
+    background-image: url('home-resources/vacation.jpg');
+    background-size: 450px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
+.nightlife {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 30px);
+    background-image: url('home-resources/nightlife.jpg');
+    background-size: 450px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
+.android {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 30px);
+    background-image: url('home-resources/android.jpg');
+    background-size: 450px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
