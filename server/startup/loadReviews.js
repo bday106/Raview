@@ -1,15 +1,19 @@
 Meteor.startup(function () {
   if (Reviews.find().count() === 0) {
     var reviews = [
-      {'name': 'Name1',
-        'description': 'Desc1'},
-      {'name': 'Name2',
-        'description': 'Desc2'},
-      {'name': 'Name3',
-        'description': 'Desc3'}
+      {'name': 'Anonymous',
+        'description': 'Jack was awesome, a lot of fun!',
+        'rating': '100',
+        'time': '10 days ago'},
+      {'name': 'Anonymous',
+        'description': 'Engaging, need to bring the family next time.',
+        'rating': '99'},
+      {'name': 'Anonymous',
+        'description': 'I just wish he played more of the hits!',
+        'rating': '94'}
     ];
     for (var i = 0; i < reviews.length; i++) {
-      Reviews.insert({name: reviews[i].name, description: reviews[i].description});
+      Reviews.insert({name: reviews[i].name, description: reviews[i].description, rating: reviews[i].rating});
     }
   }
   // Items.remove();
