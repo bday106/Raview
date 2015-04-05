@@ -1,4 +1,3 @@
-Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -50,10 +49,9 @@ Navigation -->
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p> -->
 				</div>
 				<div class="ratings">
-					<p class="pull-right">15 reviews</p>
-					<h3 class="btn btn-success">
+					<p class="pull-right"><h3 class="btn btn-success">
 						98
-					</h3>
+					</h3> 15 reviews</p>
 				</div>
 			</div>
 
@@ -61,20 +59,12 @@ Navigation -->
 
 				<div class="text-right">
 					<form>
-					  <input id="review-star" class="rating" data-show-clear="false" data-show-caption="false">
 					  <label>Title</label>
 					  <input ng-model="newReview.name">
 					  <label>Description</label>
 					  <input ng-model="newReview.description">
-					  <button class="btn btn-success" ng-click="newReview.owner=$root.currentUser._id;reviews.push(newReview)">Leave a Review</button>
+					  <button class="btn btn-success" ng-click="newReview;reviews.push(newReview)">Leave a Review</button>
 					</form>
-					<ul>
-					  <li ng-repeat="review in reviews">
-						<a href="/reviews/{{review._id}}">{{review.name}}</a>
-						<p>{{review.description}}</p>
-						<button ng-click="remove(review)">X</button>
-					  </li>
-					</ul>
 					<!-- <a class="btn btn-success">Leave a Review</a> -->
 				</div>
 
@@ -120,4 +110,3 @@ Navigation -->
 		</div>
 	</div>
 </div>
-<!-- /.container
