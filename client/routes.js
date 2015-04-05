@@ -14,11 +14,6 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
     $locationProvider.html5Mode(true);
 
     $stateProvider
-      .state('items', {
-        url: '/list',
-        templateUrl: 'client/reviews/views/items-list.ng.html',
-        controller: 'ItemsListCtrl'
-      })
       .state('reviews', {
         url: '/reviews',
         templateUrl: 'client/reviews/views/reviews-list.ng.html',
