@@ -41,12 +41,12 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       })
       .state('nightlife', {
         url: '/nightlife',
-        templateUrl: 'client/reviews/views/reviews-list.ng.html',
+        templateUrl: 'client/reviews/views/nightlife-list.ng.html',
         controller: 'ReviewsListCtrl'
       })
       .state('nightlifeDetails', {
         url: '/nightlife/:itemId',
-        templateUrl: 'client/reviews/views/review-details.ng.html',
+        templateUrl: 'client/reviews/views/nightlife-details.ng.html',
         controller: 'ReviewDetailsCtrl'
       })
       .state('food', {
