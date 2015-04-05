@@ -81,7 +81,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       })
       .state('gaming', {
         url: '/gaming',
-        templateUrl: 'client/reviews/views/reviews-list.ng.html',
+        templateUrl: 'client/reviews/views/gaming-list.ng.html',
         controller: 'ReviewsListCtrl'
       })
       .state('gamingDetails', {
@@ -91,7 +91,7 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
       })
       .state('android', {
         url: '/android',
-        templateUrl: 'client/reviews/views/reviews-list.ng.html',
+        templateUrl: 'client/reviews/views/android-list.ng.html',
         controller: 'ReviewsListCtrl'
       })
       .state('androidDetails', {

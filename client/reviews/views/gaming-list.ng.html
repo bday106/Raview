@@ -1,0 +1,202 @@
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/home">Raview</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<!-- <div class="row carousel-holder">
+				<div class="col-md-12">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active">
+								<img class="slide-image" src="http://placehold.it/800x300" alt="">
+							</div>
+							<div class="item">
+								<img class="slide-image" src="http://placehold.it/800x300" alt="">
+							</div>
+							<div class="item">
+								<img class="slide-image" src="http://placehold.it/800x300" alt="">
+							</div>
+						</div>
+						<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+			</div> -->
+
+			<div class="row">
+			<h3 style="text-align: center">Anything Awesome You Want to See Reviewed? Add It Below!</h3>
+			<br></br>
+				<form style="text-align: center">
+				  <label>Title: </label>
+				  <input ng-model="newMusicItem.name">
+				  <label>Description: </label>
+				  <input ng-model="newMusicItem.description">
+				  <label>Picture URL: </label>
+				  <input ng-model="newMusicItem.pic">
+				  <label>Artist: </label>
+				  <input ng-model="newMusicItem.artist">
+				  <button ng-click="music-items.push(newMusicItem)">Add</button>
+				</form>
+				<br></br>
+
+				  <!-- <div class="col-sm-4 col-lg-4 col-md-4" ng-repeat="item in items">
+				<a href="/music-item/{{item.id}}">
+				  	<img src="{{item.pic}}">
+					<h4>{{item.name}}</h4>
+					<p>{{item.description}}</p>
+				  </a>
+				  </div> -->
+
+				<a href="/gaming/ac0923mv2">
+				<div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="home-resources/gaming/ac.jpg" alt="">
+						<div class="caption">
+							<h4 class="pull-right">$24.99</h4>
+							<h4>Assassin's Creed II
+							</h4>
+							<p>Relive the action-filled life of an ancient assassin!</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">10 reviews</p>
+							<!-- <p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</p> -->
+						</div>
+					</div>
+				</div>
+				</a>
+
+				<a href="/gaming/gta12c0m9">
+				<div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="home-resources/gaming/gta.jpg" alt="">
+						<div class="caption">
+							<h4 class="pull-right">$59.99</h4>
+							<h4>Grand Theft Auto V
+							</h4>
+							<p>Live Dangerous, Live Free</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">34 reviews</p>
+							<!-- <p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</p> -->
+						</div>
+					</div>
+				</div>
+				</a>
+
+				
+				<a href="/gaming/hmm90324v"><div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="home-resources/gaming/hm.jpg" alt="">
+						<div class="caption">
+							<h4 class="pull-right">$18.49</h4>
+							<h4>Hotline Miami
+							</h4>
+							<p>Shooting everybody and no one knows why!</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">26 reviews</p>
+							<!-- <p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</p> -->
+						</div>
+					</div>
+				</div>
+				</a>
+
+				
+				<a href="/gaming/skyrim0m9832c"><div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="home-resources/gaming/skyrim.jpg" alt="">
+						<div class="caption">
+							<h4 class="pull-right">$59.99</h4>
+							<h4>Skyrim
+							</h4>
+							<p>Fus Ro Dah!</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">120 reviews</p>
+							<!-- <p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</p> -->
+						</div>
+					</div>
+				</div>
+				</a>
+
+				
+				<a href="/gaming/tlou98ncq"><div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="home-resources/gaming/tlou.png" alt="">
+						<div class="caption">
+							<h4 class="pull-right">$62.00</h4>
+							<h4>The Last Of Us
+							</h4>
+							<p>Game of the Year</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">113 reviews</p>
+							<!-- <p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</p> -->
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.container -->

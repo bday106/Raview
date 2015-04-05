@@ -1,0 +1,202 @@
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/home">Raview</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<!-- <div class="row carousel-holder">
+				<div class="col-md-12">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active">
+								<img class="slide-image" src="http://placehold.it/800x300" alt="">
+							</div>
+							<div class="item">
+								<img class="slide-image" src="http://placehold.it/800x300" alt="">
+							</div>
+							<div class="item">
+								<img class="slide-image" src="http://placehold.it/800x300" alt="">
+							</div>
+						</div>
+						<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+			</div> -->
+
+			<div class="row">
+			<h3 style="text-align: center">Anything Awesome You Want to See Reviewed? Add It Below!</h3>
+			<br></br>
+				<form style="text-align: center">
+				  <label>Title: </label>
+				  <input ng-model="newMusicItem.name">
+				  <label>Description: </label>
+				  <input ng-model="newMusicItem.description">
+				  <label>Picture URL: </label>
+				  <input ng-model="newMusicItem.pic">
+				  <label>Artist: </label>
+				  <input ng-model="newMusicItem.artist">
+				  <button ng-click="music-items.push(newMusicItem)">Add</button>
+				</form>
+				<br></br>
+
+				  <!-- <div class="col-sm-4 col-lg-4 col-md-4" ng-repeat="item in items">
+				<a href="/music-item/{{item.id}}">
+				  	<img src="{{item.pic}}">
+					<h4>{{item.name}}</h4>
+					<p>{{item.description}}</p>
+				  </a>
+				  </div> -->
+
+				<a href="/android/ac20193nv">
+				<div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="home-resources/android/adventure-capitalist.jpg" alt="">
+						<div class="caption">
+							<h4 class="pull-right">Free</h4>
+							<h4>Adventure Capitalist
+							</h4>
+							<p>Invest, Sit Back, and Grow Profits</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">17 reviews</p>
+							<!-- <p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</p> -->
+						</div>
+					</div>
+				</div>
+				</a>
+
+				<a href="/android/candycrush09m384v">
+				<div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="home-resources/android/candy-crush.jpg" alt="">
+						<div class="caption">
+							<h4 class="pull-right">Free</h4>
+							<h4>Candy Crush: Soda Saga
+							</h4>
+							<p>The Best Way to Waste Time!</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">63 reviews</p>
+							<!-- <p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</p> -->
+						</div>
+					</div>
+				</div>
+				</a>
+
+				
+				<a href="/android/clashclans093nv"><div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="home-resources/android/clash-of-clans.png" alt="">
+						<div class="caption">
+							<h4 class="pull-right">Free</h4>
+							<h4>Clash of Clans
+							</h4>
+							<p>Wage War, Get Notifications</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">54 reviews</p>
+							<!-- <p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</p> -->
+						</div>
+					</div>
+				</div>
+				</a>
+
+				
+				<a href="/android/fnaf2m3094v5"><div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="home-resources/android/five-nights-at-freddys.jpg" alt="">
+						<div class="caption">
+							<h4 class="pull-right">$2.99</h4>
+							<h4>Five Nights At Freddy's
+							</h4>
+							<p>Oh no, oh no, oooh no no no no!</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">59 reviews</p>
+							<!-- <p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</p> -->
+						</div>
+					</div>
+				</div>
+				</a>
+
+				
+				<a href="/android/tc03m29v"><div class="col-sm-4 col-lg-4 col-md-4">
+					<div class="thumbnail">
+						<img src="home-resources/android/trivia-crack.jpg" alt="">
+						<div class="caption">
+							<h4 class="pull-right">Free</h4>
+							<h4>Trivia Crack
+							</h4>
+							<p>Just as addictive, but more educational!</p>
+						</div>
+						<div class="ratings">
+							<p class="pull-right">38 reviews</p>
+							<!-- <p>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</p> -->
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.container -->
