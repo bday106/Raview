@@ -35,5 +35,5 @@ angular.module("raview").config(['$urlRouterProvider', '$stateProvider', '$locat
         }
       });
 
-    $urlRouterProvider.otherwise("/reviews");
+    $urlRouterProvider.otherwise("/home");
   }]);
