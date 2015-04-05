@@ -1,19 +1,17 @@
 Reviews = new Mongo.Collection("reviews");
 
-Reviews.allow({
-  insert: function (userId, review) {
-    return userId && review.owner === userId;
-  },
-  update: function (userId, review, fields, modifier) {
-    if (userId !== review.owner)
-      return false;
+MusicReviews = new Mongo.Collection("music-reviews");
 
-    return true;
-  },
-  remove: function (userId, review) {
-    if (userId !== review.owner)
-      return false;
+NightlifeReviews = new Mongo.Collection("nightlife-reviews");
 
-    return true;
-  }
-});
+FoodReviews = new Mongo.Collection("food-reviews");
+
+FurnitureReviews = new Mongo.Collection("furniture-reviews");
+
+OfficeReviews = new Mongo.Collection("office-reviews");
+
+GamingReviews = new Mongo.Collection("gaming-reviews");
+
+AndroidReviews = new Mongo.Collection("android-reviews");
+
+VacationReviews = new Mongo.Collection("vacation-reviews");
